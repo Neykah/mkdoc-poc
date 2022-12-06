@@ -6,5 +6,5 @@ pip install poetry
 poetry install --with docs
 cd docs
 poetry run mkdocs build
-npm install -g staticrypt
-find site -type f -name "*.html" -exec staticrypt {} $SECRET -o {} \;
+npm install staticrypt
+find site -type f -name "*.html" -exec npx staticrypt {} $SECRET -o {} \;
