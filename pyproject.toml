@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mkdocs-poc"
+version = "0.1.0"
+description = ""
+authors = ["Morgan Lefranc <mlefranc@ridge-i.com>"]
+readme = "README.md"
+packages = [{include = "mkdocs_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
