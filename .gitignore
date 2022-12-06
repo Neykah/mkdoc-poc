@@ -1,1 +1,5 @@
 docs/site/**
+docs/.staticrypt.json
+docs/package-lock.json
+docs/package.json
+docs/node_modules/**
