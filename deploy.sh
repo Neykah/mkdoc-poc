@@ -1,4 +1,4 @@
 pip install poetry
-poetry install --group docs
+poetry install --with docs
 cd docs
 poetry run mkdocs build
