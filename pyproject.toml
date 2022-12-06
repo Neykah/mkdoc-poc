@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "mkdocs_poc"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.9,<3.10"
 
 
 [tool.poetry.group.docs.dependencies]
