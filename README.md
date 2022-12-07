@@ -28,7 +28,7 @@ The [deploy][deploy] script uses the `mkdocs build` command to generate the HTML
 We use `staticrypt` to encrypt in place all the HTML content located in the generated documentation files, as shown in the [deploy][deploy] script.
 
 ```shell
-find site -type f -name "*.html" -exec npx staticrypt {} $SECRET -o {} \;
+find . -type f -name "*.html" -exec npx staticrypt {} $SECRET -o {} \;
 ```
 
 The above snippet uses the `SECRET` environment variable to define the password that will be used for later authentication, so make sure to specify this environment variable in the environment where you will run the [deploy script][deploy]!
